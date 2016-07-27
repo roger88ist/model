@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727211114) do
+ActiveRecord::Schema.define(version: 20160727213049) do
 
   create_table "modelos", force: :cascade do |t|
     t.string   "f_name"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20160727211114) do
     t.integer  "waist"
     t.integer  "hip"
     t.integer  "shoe"
+    t.string   "eyes"
+    t.string   "hair"
   end
 
 end
