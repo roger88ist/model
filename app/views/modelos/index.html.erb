@@ -32,7 +32,7 @@
         <td><%= modelo.shoe %></td>
         <td><%= modelo.eyes %></td>
         <td><%= modelo.hair %></td>
-        <td><%= link_to 'Show', modelo %></td>
+        <td><%= link_to 'Show', model_path(modelo) %></td>
         <td><%= link_to 'Edit', edit_modelo_path(modelo) %></td>
         <td><%= link_to 'Destroy', modelo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Model', new_modelo_path %>
+<%= link_to 'New Model', models_new_path %>
