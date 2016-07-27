@@ -12,7 +12,9 @@
       <th>Height</th>
       <th>Bust</th>
       <th>Waist</th>
-      <th colspan="5"></th>
+      <th>Hips</th>
+      <th>Shoe Size</th>
+      <th colspan="7"></th>
     </tr>
   </thead>
 
@@ -24,6 +26,8 @@
         <td><%= modelo.height %></td>
         <td><%= modelo.bust %></td>
         <td><%= modelo.waist %></td>
+        <td><%= modelo.hip %></td>
+        <td><%= modelo.shoe %></td>
         <td><%= link_to 'Show', modelo %></td>
         <td><%= link_to 'Edit', edit_modelo_path(modelo) %></td>
         <td><%= link_to 'Destroy', modelo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
