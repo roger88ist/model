@@ -7,19 +7,23 @@
 <table>
   <thead>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th>Name</th>
+      <!-- <th>Last Name</th> -->
       <th>Height</th>
-      <th colspan="4"></th>
+      <th>Bust</th>
+      <th>Waist</th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @modelos.each do |modelo| %>
       <tr>
-        <td><%= modelo.f_name %></td>
-        <td><%= modelo.l_name %></td>
+        <!-- <td><%#= modelo.f_name %></td> -->
+        <td><%= modelo.f_name %> <%= modelo.l_name %></td>
         <td><%= modelo.height %></td>
+        <td><%= modelo.bust %></td>
+        <td><%= modelo.waist %></td>
         <td><%= link_to 'Show', modelo %></td>
         <td><%= link_to 'Edit', edit_modelo_path(modelo) %></td>
         <td><%= link_to 'Destroy', modelo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
